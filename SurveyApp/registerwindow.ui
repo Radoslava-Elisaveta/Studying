@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterWindow</class>
+ <widget class="QDialog" name="RegisterWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>442</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Вхід в систему</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(247, 249, 255)</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>421</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="loginGroupBox">
+      <property name="title">
+       <string>Вхід в систему</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Логін</string>
+         </property>
+         <property name="buddy">
+          <cstring>loginLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="loginLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Пароль</string>
+         </property>
+         <property name="buddy">
+          <cstring>loginpasswordLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="loginpasswordLineEdit">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="loginButton">
+         <property name="text">
+          <string>Увійти в систему</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Бажаєте зареєструватись?</string>
+        </property>
+        <property name="buddy">
+         <cstring>startRegisterButton</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="startRegisterButton">
+        <property name="text">
+         <string>Реєстрація</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="registerGroupBox">
+      <property name="title">
+       <string>Реєстрація</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Логін</string>
+         </property>
+         <property name="buddy">
+          <cstring>regLoginLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="regLoginLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Ім'я</string>
+         </property>
+         <property name="buddy">
+          <cstring>regNameLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="regNameLineEdit"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Навчальний заклад</string>
+         </property>
+         <property name="buddy">
+          <cstring>regUniverLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="regUniverLineEdit"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Пароль </string>
+         </property>
+         <property name="buddy">
+          <cstring>regPasswordLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="regPasswordLineEdit">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="registerButton">
+         <property name="text">
+          <string>Зареєструватись</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

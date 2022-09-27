@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Тестування розуму</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(247, 249, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="startLabel">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>60</y>
+      <width>381</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Тестування розуму</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userLoginLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>490</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p/&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logoutButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 197, 255);</string>
+    </property>
+    <property name="text">
+     <string>Вийти з акаунту</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="categoryLabel">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>541</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="text">
+     <string>Оберіть категорію для тестування</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>501</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="categoryLayout">
+     <item row="0" column="1">
+      <widget class="QRadioButton" name="languageRadioButton">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(247, 249, 255);
+font: 15pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Українська мова</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="curiosityRadioButton">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(247, 249, 255);
+font: 15pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Цікавинки</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QRadioButton" name="randomRadioButton">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(247, 249, 255);
+font: 15pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Будь-яка</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="mathRadioButton">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(247, 249, 255);
+font: 15pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Математика</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="startTestButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>450</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 197, 255);</string>
+    </property>
+    <property name="text">
+     <string>Почати тестування</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showGradesButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 197, 255);</string>
+    </property>
+    <property name="text">
+     <string>Показати оцінки</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userInfoLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>281</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="goToTestButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>460</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 197, 255);</string>
+    </property>
+    <property name="text">
+     <string>Перейти до вибору категорії</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 197, 255);</string>
+    </property>
+    <property name="text">
+     <string>Увійти в систему</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="gradesTableView">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>671</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="messageLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>110</y>
+      <width>441</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="text">
+     <string>Ви ще не пройшли жодного тесту</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="testScrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>711</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>688</width>
+       <height>652</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="question_1Label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="question_1ComboBox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="question_2Label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="question_2ComboBox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="question_3Label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="question_3ComboBox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="question_4Label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="question_4ComboBox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="question_5Label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="question_5ComboBox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="question_6Label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="question_6ComboBox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="question_7Label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="question_7ComboBox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="endTestButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>460</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 197, 255);</string>
+    </property>
+    <property name="text">
+     <string>Завершити тест</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="goBackButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 197, 255);</string>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultLabel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>170</y>
+      <width>271</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="resultScrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>711</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>709</width>
+       <height>239</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="greetingLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(247, 249, 255)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>testScrollArea</zorder>
+   <zorder>startTestButton</zorder>
+   <zorder>endTestButton</zorder>
+   <zorder>startLabel</zorder>
+   <zorder>messageLabel</zorder>
+   <zorder>loginButton</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>logoutButton</zorder>
+   <zorder>userLoginLabel</zorder>
+   <zorder>categoryLabel</zorder>
+   <zorder>showGradesButton</zorder>
+   <zorder>userInfoLabel</zorder>
+   <zorder>goBackButton</zorder>
+   <zorder>gradesTableView</zorder>
+   <zorder>resultLabel</zorder>
+   <zorder>resultScrollArea</zorder>
+   <zorder>greetingLabel</zorder>
+   <zorder>goToTestButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>765</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
